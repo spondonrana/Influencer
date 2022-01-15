@@ -63,7 +63,13 @@ nav ul li a:hover {
 }
 
 /* Home style start */
-
+#home img {
+  transition: transform 1s ease-in;
+}
+#home img:hover {
+  transform-origin: center;
+  transform: scale(1.2) rotate(8deg);
+}
 .home {
   display: flex;
   justify-content: center;
