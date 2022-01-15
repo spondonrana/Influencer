@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+}
+
+section {
+  height: 100vh;
+  margin-bottom: 30px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* nav-section style start */
+
+.nav-section {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-div a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3a3a3a;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+nav ul li a:hover {
+  background-color: #e02c6d;
+  color: #fff;
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+
+/* Home style start */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 582px;
+  height: 270px;
+}
+
+.left h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+
+.left p {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3a3a3a;
+  margin: 16px 0;
+}
+.right {
+  width: 475px;
+  height: 475px;
+}
+
+.cmn-btn {
+  color: #ffffff;
+  background: #e02c6d;
+  text-align: center;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 41px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.cmn-btn:hover {
+  background-color: transparent;
+  color: #e02c6d;
+  transform: scale(1.2);
+}
+.brand-logo {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 50px 0;
+}
+
+/* popular-section */
+
+.popular-section {
+  width: 1047px;
+  height: 1662px;
+}
+.popular-section h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 28px;
+  color: #3a3a3a;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+#card-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+.card {
+  width: 329px;
+  height: 471px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-body {
+  text-align: left;
+  padding: 16px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #18191f;
+  width: 151px;
+}
+
+.description .amount {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.description .fas {
+  color: orange;
+  font-size: 10px;
+}
+
+.description .rate {
+  font-size: 14px;
+  color: #5e6366;
+}
+.description .about-product {
+  font-size: 14px;
+  color: #5e6366;
+  letter-spacing: 0.018em;
+}
+
+#left-btn {
+  float: right;
+  margin: 50px;
+}
+
+/* Contact */
+
+.contact-main {
+  position: absolute;
+  width: 1110px;
+  height: 270px;
+  top: 2500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  left: 119px;
+}
+
+.contact-details {
+  text-align: center;
+  padding: 20px 0;
+}
+.contact-details h3 {
+  font-size: 38px;
+  color: #0a0826;
+  font-weight: bold;
+}
+
+.contact-details p,
+address {
+  font-size: 0.8rem;
+}
+
+.g-map {
+  height: 250px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 800px;
+  height: 240px;
+  background: #0a0826;
+  top: 3067px;
+  justify-content: center;
+  align-items: center;
+}
+.parent {
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 50px auto;
+}
+
+.child {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
