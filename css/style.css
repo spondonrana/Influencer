@@ -12,15 +12,13 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
 }
 
-section {
-  height: 100vh;
-  margin-bottom: 30px;
-}
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 /* nav-section style start */
@@ -117,8 +115,9 @@ nav ul li a:hover {
 .brand-logo {
   display: flex;
   justify-content: space-evenly;
-
-  margin: 50px 0;
+  flex-wrap: wrap;
+  line-height: 50px;
+  margin-right: 10px;
 }
 
 /* popular-section */
@@ -157,12 +156,16 @@ nav ul li a:hover {
 }
 
 .card img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  transition: transform 0.4s;
 }
 
+.card img:hover {
+  transform: scale(1.02);
+}
 .description {
   display: flex;
   flex-direction: column;
@@ -195,9 +198,11 @@ nav ul li a:hover {
   letter-spacing: 0.018em;
 }
 
-#left-btn {
+#right-btn {
+  text-align: right;
+  font-size: 16px;
+  margin: 15px 35px 0 0;
   float: right;
-  margin: 50px;
 }
 
 /* Contact */
@@ -206,7 +211,6 @@ nav ul li a:hover {
   position: absolute;
   width: 1110px;
   height: 270px;
-  top: 2500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -214,6 +218,7 @@ nav ul li a:hover {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   left: 119px;
+  margin-top: -50px;
 }
 
 .contact-details {
@@ -238,18 +243,13 @@ address {
 /* Footer */
 
 footer {
-  margin-top: 800px;
-  height: 240px;
+  height: 180px;
   background: #0a0826;
-  top: 3067px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin-top: 380px;
 }
 .parent {
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  margin: 50px auto;
+  padding: 30px 0;
 }
 
 .child {
@@ -257,4 +257,168 @@ footer {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  color: #fff;
+}
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+  color: #18191f;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+  .home {
+    flex-direction: column;
+    grid-row-gap: 50px;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 150px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+  }
+  .right img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .popular-section {
+    width: 329px;
+    height: 4504px;
+  }
+
+  #card-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+  }
+
+  /* Contact */
+
+  .contact-main {
+    width: 404px;
+    margin-top: 80px;
+    left: 50px;
+  }
+
+  .contact-details {
+    text-align: center;
+    padding: 10px;
+  }
+  .contact-details h3 {
+    font-size: 20px;
+    color: #0a0826;
+    font-weight: bold;
+  }
+
+  .contact-details p,
+  address {
+    font-size: 0.8rem;
+  }
+
+  .g-map {
+    width: 100%;
+    padding: 10px;
+  }
+
+  footer {
+    margin-top: 450px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    padding: 5px 5px;
+  }
+
+  .home {
+    flex-direction: column;
+    grid-row-gap: 50px;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .left {
+    width: 100%;
+    margin-bottom: 150px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+  }
+  .right img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .popular-section {
+    width: 600px;
+    height: 2500px;
+  }
+
+  #card-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+  }
+
+  .contact-main {
+    width: 100%;
+    margin-top: 80px;
+    left: -5px;
+  }
+
+  .contact-details {
+    text-align: center;
+    padding: 10px;
+  }
+  .contact-details h3 {
+    font-size: 20px;
+    color: #0a0826;
+    font-weight: bold;
+  }
+
+  .contact-details p,
+  address {
+    font-size: 0.8rem;
+  }
+
+  .g-map {
+    width: 100%;
+    padding: 10px;
+  }
+
+  footer {
+    margin-top: 450px;
+  }
 }
