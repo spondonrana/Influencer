@@ -176,7 +176,7 @@ nav ul li a:hover {
   font-size: 28px;
   font-weight: 500;
   color: #18191f;
-  width: 151px;
+  text-align: left;
 }
 
 .description .amount {
@@ -347,7 +347,7 @@ footer {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up)
 @media only screen and (min-width: 768px) {
   nav ul li {
     margin-right: 10px;
@@ -421,4 +421,4 @@ footer {
   footer {
     margin-top: 450px;
   }
-}
+} */
